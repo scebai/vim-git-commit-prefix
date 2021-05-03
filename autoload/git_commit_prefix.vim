@@ -16,9 +16,12 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'perf: ', 'menu': 'A code change that improves performance'},
   \ {'word': 'test: ', 'menu': 'Adding missing or correcting existing tests'},
   \ {'word': 'chore: ', 'menu': 'Changes to the build process or auxiliary tools and libraries such as documentation generation'},
-  \ {'word': 'feat(modify): ', 'menu': 'Feature replacement'},
-  \ {'word': 'refactor(remove): ', 'menu': 'delete at files, libraries, Unnecessary function, Functions that are no longer used'},
-  \ {'word': 'refactor(disable): ', 'menu': 'Invalidation - Comment out etc.'}
+  \ {'word': 'add: ', 'menu': '新規機能、新規ファイル追加'},
+  \ {'word': 'modify: ', 'menu': 'バグではない新規機能、新規ファイル追加'},
+  \ {'word': 'change: ', 'menu': '仕様変更による機能修正'},
+  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
+  \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
+  \ {'word': 'revert: ', 'menu': '修正取り消し'}
   \ ]
 
 let s:git_commit_prefix_candidates_ja = [
@@ -30,9 +33,12 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'perf: ', 'menu': 'パフォーマンス改善のための変更'},
   \ {'word': 'test: ', 'menu': '不足テストの追加や既存テストの修正'},
   \ {'word': 'chore: ', 'menu': 'その他、補助ツール・ドキュメント生成など、ソースやテストの変更を含まない変更'},
-  \ {'word': 'feat(modify): ', 'menu': '機能の置き換え'},
-  \ {'word': 'refactor(remove): ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'refactor(disable): ', 'menu': '無効化 - コメントアウト等'}
+  \ {'word': 'add: ', 'menu': '新規機能、新規ファイル追加'},
+  \ {'word': 'modify: ', 'menu': 'バグではない新規機能、新規ファイル追加'},
+  \ {'word': 'change: ', 'menu': '仕様変更による機能修正'},
+  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
+  \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
+  \ {'word': 'revert: ', 'menu': '修正取り消し'}
   \ ]
 
 func! git_commit_prefix#candidates()
