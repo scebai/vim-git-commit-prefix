@@ -16,9 +16,9 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'perf: ', 'menu': 'A code change that improves performance'},
   \ {'word': 'test: ', 'menu': 'Adding missing or correcting existing tests'},
   \ {'word': 'chore: ', 'menu': 'Changes to the build process or auxiliary tools and libraries such as documentation generation'},
-  \ {'word': 'remove: ', 'menu': 'delete at files, libraries, Unnecessary function, Functions that are no longer used'},
-  \ {'word': 'disable: ', 'menu': 'Invalidation - Comment out etc.'},
-  \ {'word': 'modify: ', 'menu': 'Feature replacement'}
+  \ {'word': 'feat(modify): ', 'menu': 'Feature replacement'},
+  \ {'word': 'refactor(remove): ', 'menu': 'delete at files, libraries, Unnecessary function, Functions that are no longer used'},
+  \ {'word': 'refactor(disable): ', 'menu': 'Invalidation - Comment out etc.'}
   \ ]
 
 let s:git_commit_prefix_candidates_ja = [
@@ -30,9 +30,9 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'perf: ', 'menu': 'パフォーマンス改善のための変更'},
   \ {'word': 'test: ', 'menu': '不足テストの追加や既存テストの修正'},
   \ {'word': 'chore: ', 'menu': 'その他、補助ツール・ドキュメント生成など、ソースやテストの変更を含まない変更'},
-  \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'disable: ', 'menu': '無効化 - コメントアウト等'},
-  \ {'word': 'modify: ', 'menu': '機能の置き換え'}
+  \ {'word': 'feat(modify): ', 'menu': '機能の置き換え'},
+  \ {'word': 'refactor(remove): ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
+  \ {'word': 'refactor(disable): ', 'menu': '無効化 - コメントアウト等'}
   \ ]
 
 func! git_commit_prefix#candidates()
