@@ -23,7 +23,7 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'chore: ', 'menu': 'Changes to the build process or auxiliary tools and libraries such as documentation generation'},
   \ {'word': '---------', 'menu': '--------------------------------'},
   \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
-  \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
+  \ {'word': 'WIP: ', 'menu': ' work in progress'}
   \ ]
 
 let s:git_commit_prefix_candidates_ja = [
@@ -42,7 +42,7 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'chore: ', 'menu': 'その他、補助ツール・ドキュメント生成など、ソースやテストの変更を含まない変更'},
   \ {'word': '---------', 'menu': '--------------------------------'},
   \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
-  \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
+  \ {'word': 'WIP: ', 'menu': ' work in progress'}
   \ ]
 
 func! git_commit_prefix#candidates()
