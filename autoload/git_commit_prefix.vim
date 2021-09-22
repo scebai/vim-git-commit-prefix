@@ -12,7 +12,7 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'change: ', 'menu': '仕様変更による機能修正'},
   \ {'word': 'add: ', 'menu': 'add new files'},
   \ {'word': 'fix: ', 'menu': 'A bug fix'},
-  \ {'word': 'docs: ', 'menu': 'Documentation only changes'},
+  \ {'word': 'docs: ', 'menu': 'Documentation only changes, include comment'},
   \ {'word': 'refactor: ', 'menu': 'A code change that neither fixes a bug nor adds a feature'},
   \ {'word': 'style: ', 'menu': 'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)'},
   \ {'word': 'perf: ', 'menu': 'A code change that improves performance'},
@@ -20,7 +20,9 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'chore: ', 'menu': 'Changes to the build process or auxiliary tools and libraries such as documentation generation'},
   \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
   \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'revert: ', 'menu': '修正取り消し'}
+  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
+  \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
   \ ]
 
 let s:git_commit_prefix_candidates_ja = [
@@ -28,7 +30,7 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'change: ', 'menu': '仕様変更による機能修正'},
   \ {'word': 'add: ', 'menu': '新規ファイル追加'},
   \ {'word': 'fix: ', 'menu': 'バグ修正'},
-  \ {'word': 'docs: ', 'menu': 'ドキュメントのみの変更'},
+  \ {'word': 'docs: ', 'menu': 'ドキュメントのみの変更, 注釈含む'},
   \ {'word': 'refactor: ', 'menu': 'リファクタリング（機能追加やバグ修正を含まない変更）'},
   \ {'word': 'style: ', 'menu': 'コードの動作に影響しない変更（スペース・フォーマット・セミコロン等）'},
   \ {'word': 'perf: ', 'menu': 'パフォーマンス改善のための変更'},
@@ -36,7 +38,9 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'chore: ', 'menu': 'その他、補助ツール・ドキュメント生成など、ソースやテストの変更を含まない変更'},
   \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
   \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'revert: ', 'menu': '修正取り消し'}
+  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
+  \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
   \ ]
 
 func! git_commit_prefix#candidates()
