@@ -16,11 +16,12 @@ let s:git_commit_prefix_candidates_en = [
   \ {'word': 'refactor: ', 'menu': 'A code change that neither fixes a bug nor adds a feature'},
   \ {'word': 'style: ', 'menu': 'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)'},
   \ {'word': 'perf: ', 'menu': 'A code change that improves performance'},
+  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）, ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
+  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': '--------', 'menu': '--------------------------------'},
   \ {'word': 'test: ', 'menu': 'Adding missing or correcting existing tests'},
   \ {'word': 'chore: ', 'menu': 'Changes to the build process or auxiliary tools and libraries such as documentation generation'},
-  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
-  \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': '---------', 'menu': '--------------------------------'},
   \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
   \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
   \ ]
@@ -34,11 +35,12 @@ let s:git_commit_prefix_candidates_ja = [
   \ {'word': 'refactor: ', 'menu': 'リファクタリング（機能追加やバグ修正を含まない変更）'},
   \ {'word': 'style: ', 'menu': 'コードの動作に影響しない変更（スペース・フォーマット・セミコロン等）'},
   \ {'word': 'perf: ', 'menu': 'パフォーマンス改善のための変更'},
+  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）, ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
+  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': '--------', 'menu': '--------------------------------'},
   \ {'word': 'test: ', 'menu': '不足テストの追加や既存テストの修正'},
   \ {'word': 'chore: ', 'menu': 'その他、補助ツール・ドキュメント生成など、ソースやテストの変更を含まない変更'},
-  \ {'word': 'disable: ', 'menu': '無効化（コメントアウト等）'},
-  \ {'word': 'remove: ', 'menu': 'ファイル,ライブラリ,不要な機能,使われなくなった機能の削除'},
-  \ {'word': 'revert: ', 'menu': '修正取り消し'},
+  \ {'word': '---------', 'menu': '--------------------------------'},
   \ {'word': 'BREAKING CHANGE: ', 'menu': '破壊的な変更'},
   \ {'word': 'WIP: ', 'menu': ' work in progress = 作業中'}
   \ ]
